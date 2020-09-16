@@ -1,0 +1,11 @@
+export const loginURL = '/api/user/login' /* 注册 */
+export const registerURL = '/api/user/register'/* 登录 */
+export const cateURL = '/index.php' // 分类\列表
+export const addCarURL = '/api/shopcar/add'/* 添加到购物车 */
+export const getShopURL = '/api/shopcar/getCar'/* 获取购物车 */
+export const delShopURL = '/api/shopcar/del'/* 获取购物车 */
+export const picURL = 'https://elm.cangdu.org/v1/addimg/shop'/* 上传图片 */
+export const tokenURL = 'https://www.fastmock.site/mock/b66f713bbd3293a1fd6e67db8d8f39a8/api/check-token'
+export const moveListUrl = '/ajax/movieOnInfoList' /* 猫眼 */
+export const moreComingUrl = '/ajax/moreComingList' /* 猫眼id */
+export const lstUrl = '/api/list/hot'/* 人气商品 */

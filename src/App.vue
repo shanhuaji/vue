@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Tab></Tab>
+    <router-view></router-view>
+    <Tabcar></Tabcar>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Tab from "Comp/Tab";
+import Tabcar from "Comp/Tabcar";
+import Home from "Pages/home";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
-</script>
+    Tab,
+    Tabcar,
+    Home,
+  },
 
+  data() {
+    return {
+      time: Date.now(),
+      test: 1,
+    };
+  },
+};
+</script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import "Assets/scss/allclear.scss";
+body,
+html {
+  width: 100%;
+  height: 100%;
+  #app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>
